@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+	<AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Auction.Application\Auction.Application.csproj" />
+	<PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Core" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

@@ -21,6 +21,5 @@ namespace Auction.Controllers
         {
             return Ok(await _mediator.Send(new CreateCameraQuery()));
         }
-
     }
 }

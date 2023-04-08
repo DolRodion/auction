@@ -1,0 +1,12 @@
+C:\Auction\Auction\Auction.Application\bin\Debug\net6.0\Auction.Application.deps.json
+C:\Auction\Auction\Auction.Application\bin\Debug\net6.0\Auction.Application.dll
+C:\Auction\Auction\Auction.Application\bin\Debug\net6.0\Auction.Application.pdb
+C:\Auction\Auction\Auction.Application\obj\Debug\net6.0\Auction.Application.csproj.AssemblyReference.cache
+C:\Auction\Auction\Auction.Application\obj\Debug\net6.0\Auction.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Auction\Auction\Auction.Application\obj\Debug\net6.0\Auction.Application.AssemblyInfoInputs.cache
+C:\Auction\Auction\Auction.Application\obj\Debug\net6.0\Auction.Application.AssemblyInfo.cs
+C:\Auction\Auction\Auction.Application\obj\Debug\net6.0\Auction.Application.csproj.CoreCompileInputs.cache
+C:\Auction\Auction\Auction.Application\obj\Debug\net6.0\Auction.Application.dll
+C:\Auction\Auction\Auction.Application\obj\Debug\net6.0\refint\Auction.Application.dll
+C:\Auction\Auction\Auction.Application\obj\Debug\net6.0\Auction.Application.pdb
+C:\Auction\Auction\Auction.Application\obj\Debug\net6.0\ref\Auction.Application.dll

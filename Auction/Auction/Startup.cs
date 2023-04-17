@@ -1,6 +1,8 @@
 using Auction.Application;
+using MBC.Core.DataAccess.Core;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -22,9 +24,8 @@ namespace Auction
             services.AddControllers();
 
             services.AddApplication();
-
-            //Добавление свагера
-            services.AddSwaggerGen();
+            
+            SetupInit(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +49,24 @@ namespace Auction
             {
                 endpoints.MapControllers();
             });
+        }
+
+        private void SetupInit(IServiceCollection services)
+        {
+            //Соединение с БД
+            SetupDatabaseSql(services);
+
+            //Добавление свагера
+            services.AddSwaggerGen();
+        }
+
+        /// <summary>
+        /// Настройка соединения с БД
+        /// </summary>
+        private void SetupDatabaseSql(IServiceCollection services)
+        {
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("Auction")));       //Строка соединения находится в database-config.json
         }
     }
 }

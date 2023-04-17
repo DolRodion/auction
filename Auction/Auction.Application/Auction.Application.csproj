@@ -9,4 +9,9 @@
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Auction.DataAccess\Auction.DataAccess.csproj" />
+    <ProjectReference Include="..\Auction.Domain\Auction.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

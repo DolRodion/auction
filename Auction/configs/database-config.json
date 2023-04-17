@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "Auction": "Server=localhost;Database=Auction;Trusted_Connection=True;MultipleActiveResultSets=false"
+  }
+}

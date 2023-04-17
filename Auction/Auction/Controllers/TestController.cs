@@ -18,7 +18,7 @@ namespace Auction.Controllers
         [Route("Create")]
         public async Task<IActionResult> CreateAsync()
         {
-            return Ok(await _mediator.Send(new CreateCameraQuery()));
+            return Ok(await Mediator.Send(new CreateCameraQuery()));
         }
     }
 }

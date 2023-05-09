@@ -1,6 +1,6 @@
-﻿using MBC.Core.DataAccess.Repository;
+﻿using Auction.Domain.Entities;
+using MBC.Core.DataAccess.Repository;
 using MBC.Core.Domain.Contracts;
-using MBC.Core.Domain.Entities;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
@@ -16,6 +16,8 @@ namespace Auction.Application
 
 
             services.AddTransient<IGenericRepository<Employee>, GenericRepository<Employee>>();
+
+            services.AddTransient<IGenericRepository<AspNetUsers>, GenericRepository<AspNetUsers>>();
 
             return services;
         }

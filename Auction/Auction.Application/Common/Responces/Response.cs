@@ -18,5 +18,10 @@
 
         /// <inheritdoc/>
         public bool IsSuccess { get; set; }
+
+        public static Response GetSuccessResponse()
+        {
+            return new Response() { IsSuccess = true };
+        }
     }
 }

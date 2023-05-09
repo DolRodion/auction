@@ -1,5 +1,6 @@
-﻿using MBC.Core.DataAccess.Core;
-using MBC.Core.Domain.Entities;
+﻿using Auction.Domain.Entities;
+using MBC.Core.DataAccess.Core;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Auction.DataAccess.Configurations
@@ -8,7 +9,11 @@ namespace Auction.DataAccess.Configurations
     {
         public override void ConfigureEntity(EntityTypeBuilder<Employee> modelBuilder)
         {
-
+            modelBuilder.HasOne(s => s.AspNetUser)
+                .WithOne(g => g.Employee)
+                .HasForeignKey<Employee>(s => s.AspNetUserId)
+                .IsRequired(false)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿
-using MBC.Core.Domain.Entities;
+using Auction.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Threading;
 using System.Threading.Tasks;
@@ -36,9 +36,14 @@ namespace MBC.Core.DataAccess.Core
         }
 
         /// <summary>
-        /// Agreement
+        /// Пользователь 
         /// </summary>
-        public DbSet<Employee> Agreement { get; set; }
+        public DbSet<Employee> Employee { get; set; }
+
+        /// <summary>
+        /// AspNetUsers
+        /// </summary>
+        public DbSet<AspNetUsers> Agreement { get; set; }
     }
 }
 
